@@ -4,13 +4,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Dynamic Loader</title>
+    <style>
+      @keyframes load {
+        0% {
+          width: 30px;
+          height: 30px;
+        }
+        50% {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      .loading {
+        animation: load 0.8s ease infinite;
+      }
+
+      .one {
+        animation-delay: 0.3s;
+      }
+      .two {
+        animation-delay: 0.4s;
+      }
+      .three {
+        animation-delay: 0.5s;
+      }
+    </style>
   </head>
   <body class="bg-blue-700 min-h-screen flex items-center justify-center">
     <section class="flex space-x-4 p-5">
-      <div class=" bg-white w-8 h-8 rounded-full"></div>
-      <div class=" bg-white w-8 h-8 rounded-full"></div>
-      <div class=" bg-white w-8 h-8 rounded-full"></div>
-      <div class=" bg-white w-8 h-8 rounded-full"></div>
+      <div class="bg-white w-8 h-8 rounded-full"></div>
+      <div class="bg-white w-8 h-8 rounded-full"></div>
+      <div class="bg-white w-8 h-8 rounded-full"></div>
+      <div class="bg-white w-8 h-8 rounded-full"></div>
     </section>
   </body>
 </html>
