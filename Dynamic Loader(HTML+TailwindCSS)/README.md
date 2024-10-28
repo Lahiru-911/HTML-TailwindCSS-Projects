@@ -32,3 +32,4 @@ Here's a snippet of the core HTML and Tailwind CSS setup:
   <div class="loading three bg-white w-8 h-8 rounded-full"></div>
   <div class="loading four bg-white w-8 h-8 rounded-full"></div>
 </section>
+```
